@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(#000428, #004e92);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: "poppins", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20vh;
+  padding: 20px;
+  color: white;
+  animation-name: slide-down;
+  animation-duration: 3s;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  padding: 5px;
+}
+
+.todo-list {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+input {
+  margin: 3px;
+  padding: 5px;
+}
+
+p,
+button {
+  margin: 5px;
+  padding: 5px;
+}
+
+p {
+  color: white;
+  font-size: 0.9rem;
+}
+
+#submit-btn {
+  padding: 5px 10px 5px 10px;
+  background-color: white;
+  color: black;
+}
+
+#submit-btn:hover {
+  background-color: #244a21;
+  color: white;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+
+.todo-item > button {
+  color: #244a21;
+  background-color: white;
+  max-height: 30px;
+}
+
+.todo-item > button:hover {
+  background-color: #244a21;
+  color: white;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
